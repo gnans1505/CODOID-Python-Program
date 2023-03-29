@@ -1,0 +1,52 @@
+PYTHON
+
+1.PROGRAM TO FIND DUPLICATE FOR ARRAY VALUES:
+
+arr = [1, 2, 3, 4, 2, 7, 8, 8, 3];     
+     
+print("Duplicate elements in given array: ");       
+for i in range(0, len(arr)):    
+    for j in range(i+1, len(arr)):    
+        if(arr[i] == arr[j]):    
+            print(arr[j]); 
+
+OUTPUT:
+Duplicate elements in given array:
+2
+3
+8
+
+2.PYTHON PROGRAM TO PRINT ELEMENTS OF ARRAY IN REVERSE ORDER:
+ 
+arr = [1, 2, 3, 4, 5];     
+print("Original array: ");    
+for i in range(0, len(arr)):    
+    print(arr[i]),     
+print("Array in reverse order: ");        
+for i in range(len(arr)-1, -1, -1):     
+    print(arr[i]),  
+
+OUTPUT:
+Original array: 
+1	2   3   4   5
+Array in reverse order:
+5    4   3   2   1
+
+3.FIND MAXIMUM REPEATED CHARACTER COUNT IN A STRING:
+
+string= "mississippis"
+print(string)
+
+char_freq={}
+
+for i in string:
+    if i in char_freq:
+        char_freq[i]=char_freq[i]+1
+    else:
+        char_freq[i] = 1
+result= max(char_freq, key = char_freq.get)
+
+print("Most frequent character: ",result)
+
+OUTPUT:
+Most frequent charater is : S
